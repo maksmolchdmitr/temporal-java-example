@@ -14,8 +14,8 @@ import java.util.List;
 public class TemporalConfig {
 
     @Bean
-    public TemporalLifecycleConfig temporalLifecycleConfig(WorkerFactory workerFactory) {
-        return new TemporalLifecycleConfig(workerFactory);
+    public WorkerLifecycleConfig temporalLifecycleConfig(WorkerFactory workerFactory) {
+        return new WorkerLifecycleConfig(workerFactory);
     }
 
     @Bean
