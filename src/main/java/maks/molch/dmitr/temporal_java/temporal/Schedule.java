@@ -4,7 +4,7 @@ import lombok.RequiredArgsConstructor;
 import maks.molch.dmitr.temporal_java.temporal.workflow.HelloWorkflow;
 
 @RequiredArgsConstructor
-public enum ScheduleName {
+public enum Schedule {
     SAY_HELLO(
             HelloWorkflow.class,
             QueueName.SAY_HELLO

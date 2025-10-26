@@ -5,7 +5,7 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.context.Lifecycle;
 
 @RequiredArgsConstructor
-public class WorkerLifecycleConfig implements Lifecycle {
+public class WorkerLifecycle implements Lifecycle {
 
     private final WorkerFactory workerFactory;
 
