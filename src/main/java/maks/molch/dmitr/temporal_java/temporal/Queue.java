@@ -1,5 +1,5 @@
 package maks.molch.dmitr.temporal_java.temporal;
 
-public enum QueueName {
+public enum Queue {
     SAY_HELLO,
 }

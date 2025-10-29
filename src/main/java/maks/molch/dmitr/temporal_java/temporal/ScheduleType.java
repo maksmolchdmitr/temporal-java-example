@@ -1,17 +1,19 @@
 package maks.molch.dmitr.temporal_java.temporal;
 
+import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import maks.molch.dmitr.temporal_java.temporal.workflow.HelloWorkflow;
 
 @RequiredArgsConstructor
-public enum Schedule {
+@Getter
+public enum ScheduleType {
     SAY_HELLO(
             HelloWorkflow.class,
-            QueueName.SAY_HELLO
+            Queue.SAY_HELLO
     );
 
     private final Class<? extends AbstractWorkflow> workflowType;
-    private final QueueName queueName;
+    private final Queue queue;
 
     public String getWorkflowId() {
         return this.name().toLowerCase() + "_workflow";

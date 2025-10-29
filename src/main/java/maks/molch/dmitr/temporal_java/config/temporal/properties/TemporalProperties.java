@@ -1,12 +1,12 @@
 package maks.molch.dmitr.temporal_java.config.temporal.properties;
 
-import maks.molch.dmitr.temporal_java.temporal.Schedule;
+import maks.molch.dmitr.temporal_java.temporal.ScheduleType;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
 import java.util.Map;
 
-@ConfigurationProperties(prefix = "temporal")
+@ConfigurationProperties(prefix = "temporal", ignoreUnknownFields = false)
 public record TemporalProperties(
-        Map<Schedule, ScheduleProperties> schedules
+        Map<ScheduleType, ScheduleProperties> schedules
 ) {
 }
